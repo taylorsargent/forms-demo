@@ -7,6 +7,42 @@
 </head>
 <body>
 
+  <form>
+
+    <div>
+      <label for="name">Name</label>
+      <input id="name" required>
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" required placeholder="example@whatever.com">
+    </div>
+
+    <div>
+      <label for="credit">Credit Card Type</label>
+      <select id="credit">
+        <option></option>
+        <option>VISA</option>
+        <option>AMEX</option>
+        <option>MASTERCARD</option>
+      </select>
+    </div>
+
+    <fieldset>
+      <legend>Account Type</legend>
+      <input id="free" type="radio" name="account">
+      <label for="free">Free</label>
+
+      <input id="advanced" type="radio" name="account">
+      <label for="advanced">Advanced</label>
+
+      <input id="premium" type="radio" name="account">
+      <label for="premium">Premium</label>
+    </fieldset>
+
+  </form>
+
 
 
 </body>
