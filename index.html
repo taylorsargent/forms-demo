@@ -7,21 +7,21 @@
 </head>
 <body>
 
-  <form>
+  <form action="https://formspree.io/taylor.sargent@hotmail.com" method="post">
 
     <div>
       <label for="name">Name</label>
-      <input id="name" required>
+      <input id="name" required name="name">
     </div>
 
     <div>
       <label for="email">Email</label>
-      <input id="email" type="email" required placeholder="example@whatever.com">
+      <input id="email" type="email" name="email" required placeholder="example@whatever.com">
     </div>
 
     <div>
-      <label for="credit">Credit Card Type</label>
-      <select id="credit">
+      <label for="subject">Credit Card Type</label>
+      <select id="subject" name="_subject">
         <option></option>
         <option>VISA</option>
         <option>AMEX</option>
@@ -40,6 +40,15 @@
       <input id="premium" type="radio" name="account">
       <label for="premium">Premium</label>
     </fieldset>
+
+    <div>
+      <label for="message">Message</label>
+      <textarea id="message" name="message"></textarea>
+    </div>
+
+    <div>
+      <button type="submit">Sign up!</button>
+    </div>
 
   </form>
 
